@@ -1,13 +1,15 @@
 package org.example;
+import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("What is your name?");
+
+        System.out.println("Hello, " + scanner.nextLine() + ", nice to meet you!");
+        scanner.close();
     }
 }
